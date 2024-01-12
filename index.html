@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle">
+    <meta name="description" content="freeCodeCamp Certification project for Responsive Web Design">
+    <title>FCC Survey - Cert Project #1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1 id="title">How are you learning frontend web development?</h1>
+    <p id="description">Thank you for helping out with this project. We hope to make learning better for you!</p>
+
+    <form id="survey-form">
+        <div class="input-element">
+            <label id="name-label">Name</label>
+            <input type="text" id="name" required placeholder="Bill">
+        </div>
+
+        <div class="input-element">
+            <label id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="random@email.com">
+        </div>
+
+        <div class="input-element">
+            <label id="number-label">Age</label>
+            <input id="number" type="number" required min="13" max="75" placeholder="Age">
+        </div>
+
+        <div class="input-element">
+            <label id="select-label">What career were you in (or currently in) while learning Frontend Web Development?</label>
+            <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Student (High School or College)</option>
+                <option value="2">Marketing</option>
+                <option value="3">Education</option>
+                <option value="4">Healthcare</option>
+                <option value="5">Finance</option>
+                <option value="6">Graphic Design</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Have you made a website before?</label>
+            <div>
+                <label><input type="radio" name="game" value="yes">Yes</label>
+            </div>
+            <div>
+                <label><input type="radio" name="game" value="no">No</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Which are of the languages are you most looking forward to learn?</label>
+            <div>
+                <label><input type="checkbox" name="ideas" value="html">HTML</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ideas" value="css">CSS</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ideas" value="javascript">JavaScript</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ideas" value="js-frame">JavaScript Framework(s)</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ideas" value="css-frame">CSS Framework(s)</label>
+            </div>
+        </div>
+
+        <div class="input-element">
+            <label>Additional Comments</label>
+            <textarea placeholder="One thing I'm looking forward to do is..."></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
